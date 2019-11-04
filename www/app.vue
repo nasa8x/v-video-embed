@@ -57,33 +57,3 @@
     </div>
 </template>
 
-
-<script>
-
-    export default {
-        data() {
-            return {
-                value: 'Hello world',
-
-                custom: {
-                    'upload': {
-                        cmd: 'upload',
-                        className: 'fas fa-upload',
-                        title: 'Upload File'
-                    }
-                }
-            }
-        },
-
-
-        created() {
-            this.$root.$on('markdown-editor:upload', function (md) {
-                md.drawImage({ url: 'https://i.imgur.com/CbCXhBe.png', title: 'this image title' });
-            });
-
-        }
-
-
-    }
-
-</script>
