@@ -66,5 +66,43 @@ Vue.use(Embed);
 
 ```
 
+```html
+<!-- 21:9 aspect ratio -->
+ <video-embed css="embed-responsive-21by9" src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
+
+ <!-- 16:9 aspect ratio: default -->
+ <video-embed css="embed-responsive-16by9" src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
+
+ <!-- 4:3 aspect ratio -->
+ <video-embed css="embed-responsive-4by3" src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
+
+ <!-- 1:1 aspect ratio -->
+ <video-embed css="embed-responsive-1by1" src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
+
+```
+
+```html
+
+<video-embed ref="youtube" src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
+
+<button class="btn btn-primary" v-on:click="change">Change Url</button>
 
 
+<script>
+
+
+    export default {
+
+        methods: {
+
+            change() {
+
+                this.$refs.youtube.src = "https://www.youtube.com/watch?v=nqwQpXoSN7Q";
+
+            }
+        }
+
+    }
+</script>
+
+```

@@ -93,6 +93,12 @@
         },
 
 
+        watch: {
+            src(val) {
+
+                this.parse();
+            },
+        },
 
         methods: {
 

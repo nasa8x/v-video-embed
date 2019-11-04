@@ -4,18 +4,28 @@
 
             <header>
                 <h1>Vue Video Embed</h1>
-                <h4>This is a component for Vue.js to utilize YouTube, Vimeo, DailyMotion, Coub iframe embed API easily.</h4>
+                <h4>This is a component for Vue.js to utilize YouTube, Vimeo, DailyMotion, Coub iframe embed API easily.
+                </h4>
             </header>
 
             <div class="form-group">
-                <h2 class="text-center"><a href="https://morioh.com" title="Social Network for Developers">Social Network for Developers</a></h2>
+                <h2 class="text-center"><a href="https://morioh.com" title="Social Network for Developers">Social
+                        Network for Developers</a></h2>
             </div>
 
 
-            <div class="form-group">             
+            <div class="form-group">
 
-                <video-embed :params="{autoplay: 1}" src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
+                <video-embed :params="{autoplay: 1}" ref="youtube" src="https://www.youtube.com/watch?v=s4ObxcdXoFE">
+                </video-embed>
+
+
             </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" v-on:click="change">Change Url</button>
+            </div>
+
 
             <div class="form-group">
                 <video-embed src="https://vimeo.com/370293725"></video-embed>
@@ -57,3 +67,20 @@
     </div>
 </template>
 
+
+<script>
+
+
+    export default {
+
+        methods: {
+
+            change() {
+
+                this.$refs.youtube.src = "https://www.youtube.com/watch?v=nqwQpXoSN7Q";
+
+            }
+        }
+
+    }
+</script>

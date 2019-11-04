@@ -174,6 +174,11 @@ __webpack_require__.r(__webpack_exports__);
       ]
     };
   },
+  watch: {
+    src: function src(val) {
+      this.parse();
+    }
+  },
   methods: {
     parse: function parse() {
       if (this.src) {
