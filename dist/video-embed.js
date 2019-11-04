@@ -188,8 +188,8 @@ __webpack_require__.r(__webpack_exports__);
             }).join('&');
             var and = v.url.indexOf('?') >= 0 ? '&' : '?';
             this.url = this.src.replace(v.reg, v.url) + and + query;
-            this.valid = true;
-            console.log(this.url);
+            this.valid = true; // console.log(this.url);
+
             return;
           }
         }

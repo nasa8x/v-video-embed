@@ -112,7 +112,7 @@
                             this.url = this.src.replace(v.reg, v.url) + and + query;
                             this.valid = true;
 
-                            console.log(this.url);
+                            // console.log(this.url);
 
                             return;
                         }

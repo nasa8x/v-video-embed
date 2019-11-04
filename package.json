@@ -1,7 +1,7 @@
 {
   "name": "v-video-embed",
-  "description": "Vue Markdown Editor component for Vue.js",
-  "version": "1.0.1",
+  "description": "This is a component for Vue.js to utilize YouTube, Vimeo, DailyMotion, Coub iframe embed API easily.",
+  "version": "1.0.2",
   "author": "Nasa8x",
   "main": "./dist/video-embed.min.js",
   "scripts": {
@@ -11,29 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nasa8x/v-markdown-editor.git"
+    "url": "git+https://github.com/nasa8x/v-video-embed.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nasa8x/v-markdown-editor/issues"
+    "url": "https://github.com/nasa8x/v-video-embed/issues"
   },
   "homepage": "https://morioh.com/topic/vue-js",
   "keywords": [
-    "vue markdown editor",
-    "markdown editor",
-    "mardown editor vue",
-    "vue markdown",
-    "vue-markdown",
-    "markdown-editor",
-    "vue markdown componenet",
-    "vuejs markdown editor",
-    "bootstrap markdown editor"
+    "vue video embed",
+    "vue youtube embed",
+    "vue vimeo embed",
+    "vue embed",
+    "vue dailymotion embed",
+    "vue coub embed",
+    "vue youku embed"
   ],
   "dependencies": {
-    "codemirror": "^5.49.2",
-    "jquery": "^3.4.1",
-    "markdownparser": "^1.1.2",
-    "marked": "^0.7.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
