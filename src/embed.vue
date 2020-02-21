@@ -1,7 +1,8 @@
 <template>
 
     <div class="embed-responsive" :class="[css]" v-if="valid">
-        <iframe class="embed-responsive-item" allowfullscreen :src="url"></iframe>
+        <iframe sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"
+            class="embed-responsive-item" allowfullscreen :src="url"></iframe>
     </div>
 
 </template>
@@ -74,6 +75,7 @@
                             autoplay: 0
                         }
                     },
+
 
 
                     // {

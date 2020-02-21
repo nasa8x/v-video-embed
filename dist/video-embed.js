@@ -115,6 +115,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     css: {
@@ -229,7 +230,12 @@ var render = function() {
     ? _c("div", { staticClass: "embed-responsive", class: [_vm.css] }, [
         _c("iframe", {
           staticClass: "embed-responsive-item",
-          attrs: { allowfullscreen: "", src: _vm.url }
+          attrs: {
+            sandbox:
+              "allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation",
+            allowfullscreen: "",
+            src: _vm.url
+          }
         })
       ])
     : _vm._e()

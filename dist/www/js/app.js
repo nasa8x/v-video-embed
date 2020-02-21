@@ -378,6 +378,7 @@
         //
         //
         //
+        //
 
         /* harmony default export */
 
@@ -516,6 +517,7 @@
           }, [_c("iframe", {
             staticClass: "embed-responsive-item",
             attrs: {
+              sandbox: "allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation",
               allowfullscreen: "",
               src: _vm.url
             }
