@@ -16,7 +16,7 @@
 
             <div class="form-group">
 
-                <video-embed :params="{autoplay: 1}" ref="youtube" src="https://www.youtube.com/watch?v=s4ObxcdXoFE">
+                <video-embed :params="{autoplay: 1}" ref="youtube" src="https://www.youtube.com/watch?v=s4ObxcdXoFE&list=PLOtXQ1m0FkHBRg_6v8lJfX9AKKamgYrjC">
                 </video-embed>
 
 

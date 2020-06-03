@@ -1,7 +1,7 @@
 {
   "name": "v-video-embed",
   "description": "This is a component for Vue.js to utilize YouTube, Vimeo, DailyMotion, Coub iframe embed API easily.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Nasa8x",
   "main": "./dist/video-embed.min.js",
   "scripts": {

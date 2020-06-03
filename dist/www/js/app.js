@@ -402,8 +402,9 @@
               url: '',
               videos: [{
                 //reg: /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|\?v=)([^#\&\?]*).*/i,
-                reg: /^.*(?:(?:v|vi|be|videos|embed)\/(?!videoseries)|(?:v|ci)=)([\w-]{11})/i,
-                url: 'https://www.youtube.com/embed/$1',
+                //reg: /^.*(?:(?:v|vi|be|videos|embed)\/(?!videoseries)|(?:v|ci)=)([\w-]{11})/i,
+                reg: /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/i,
+                url: 'https://www.youtube.com/embed/$5',
                 params: {
                   'picture-in-picture': 1,
                   accelerometer: 1,
@@ -919,7 +920,8 @@ var render = function() {
             ref: "youtube",
             attrs: {
               params: { autoplay: 1 },
-              src: "https://www.youtube.com/watch?v=s4ObxcdXoFE"
+              src:
+                "https://www.youtube.com/watch?v=s4ObxcdXoFE&list=PLOtXQ1m0FkHBRg_6v8lJfX9AKKamgYrjC"
             }
           })
         ],
