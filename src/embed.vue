@@ -1,7 +1,7 @@
 <template>
 
     <div class="embed-responsive" :class="[css]" v-if="valid">
-        <iframe sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"
+        <iframe sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation allow-presentation"
             class="embed-responsive-item" allowfullscreen :src="url"></iframe>
     </div>
 
